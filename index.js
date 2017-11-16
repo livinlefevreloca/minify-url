@@ -10,7 +10,8 @@ var fs = require('fs');
 var dbUrl = process.env.MONGO_URI;
 var uri = process.env.BASE_URI;
 var app = express();
-
+console.log(uri);
+console.log(dbUrl);
 
 app.all("*", function(req, res, next) {
   //res.setHeader(200, { "Content-Type": "text/plain" });
