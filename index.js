@@ -20,8 +20,7 @@ app.all("*", function(req, res, next) {
 
 
 app.get('/', function(req,res){
-  //res.setHeader(200, { "Content-Type": "text/plain" });
-  res.send('index.html');
+  res.sendFile(path.join(__dirname + '/index.html'));
 
 })
 
