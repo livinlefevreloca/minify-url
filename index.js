@@ -20,7 +20,7 @@ app.all("*", function(req, res, next) {
 
 
 app.get('/', function(req,res){
-  res.setHeader(200, { "Content-Type": "text/plain" });
+  //res.setHeader(200, { "Content-Type": "text/plain" });
   res.send('index.html');
 
 })
