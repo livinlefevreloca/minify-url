@@ -3,6 +3,7 @@ var mongo = require('mongodb').MongoClient;
 var validurl = require('check-valid-url');
 var http = require('http');
 var fs = require('fs');
+var path = require('path');
 
 
 
@@ -20,7 +21,8 @@ app.all("*", function(req, res, next) {
 
 
 app.get('/', function(req,res){
-  res.sendFile('index.html');
+
+  res.sendFile(path.join(__dirname + '/index.html'));
 
 })
 
