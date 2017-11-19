@@ -99,4 +99,4 @@ app.get("*", function(request, response) {
   response.end("404");
 });
 
-http.createServer(app).listen(1337);
+http.createServer(app).listen(process.env.PORT);
