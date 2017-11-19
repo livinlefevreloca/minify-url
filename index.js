@@ -19,6 +19,12 @@ app.all("*", function(req, res, next) {
 });
 
 
+app.get('/', function(req,res){
+  res.setHeader(200, { "Content-Type": "text/plain" });
+  res.send('index.html');
+
+})
+
 app.get('/:id', function(req,res){
    var id = req.params.id;
 
